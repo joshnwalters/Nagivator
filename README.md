@@ -1,3 +1,3 @@
 # Nagivator
-Mobile App
+Mobile App,
 Set Sail!
