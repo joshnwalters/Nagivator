@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         ImageView avatarImageView = (ImageView) findViewById(R.id.avatarImageView);
-        Button setSailBtn = (Button) findViewById(R.id.setSailBtn);
+        Button setSailBtn = (Button) findViewById(R.id.startSailBtn);
         setSailBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick( View view) {

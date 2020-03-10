@@ -10,9 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".activity_sailing_activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_sailing_activity"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".sailing_activity"
+            android:label="@string/title_activity_sailing_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".voyage"
             android:label="@string/title_activity_voyage"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />

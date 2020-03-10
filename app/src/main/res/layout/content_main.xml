@@ -24,7 +24,7 @@
         tools:layout_editor_absoluteY="3dp" />
 
     <Button
-        android:id="@+id/setSailBtn"
+        android:id="@+id/startSailBtn"
         android:layout_width="88dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -42,7 +42,7 @@
         android:text="View Logbook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/setSailBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/startSailBtn" />
 
     <Button
         android:id="@+id/chartCourseBtn"
