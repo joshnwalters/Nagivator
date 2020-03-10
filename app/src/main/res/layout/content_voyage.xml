@@ -12,20 +12,150 @@
         android:id="@+id/setSailBtn"
         android:layout_width="378dp"
         android:layout_height="66dp"
+        android:layout_marginBottom="80dp"
         android:text="Set Sail!"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="519dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/setSailTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Plan Your Voyage!"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="29dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/windsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="How are the winds?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setSailTitle" />
+
+    <RadioGroup
+        android:id="@+id/windsRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/windsTitle">
+
+        <RadioButton
+            android:id="@+id/hurricaneRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Hurricane Forced!" />
+
+        <RadioButton
+            android:id="@+id/fairRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fair Winds" />
+
+        <RadioButton
+            android:id="@+id/oarRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Man The Oars!" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/hazardsRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/setSailBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/windsTitle"
+        app:layout_constraintVertical_bias="0.44">
+
+        <RadioButton
+            android:id="@+id/shoalingRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="We be Shoaling!" />
+
+        <RadioButton
+            android:id="@+id/otherTreasureRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="There be other loot!" />
+
+        <RadioButton
+            android:id="@+id/noneRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It be Smooth Sailing!" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/hazardsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are there any Hazards?"
+        app:layout_constraintBottom_toTopOf="@+id/hazardsRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/windsRadioGroup" />
+
+    <TextView
+        android:id="@+id/howLongTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="How long are you Sailing?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hazardsRadioGroup" />
+
+    <RadioGroup
+        android:id="@+id/howLongRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howLongTitle">
+
+        <RadioButton
+            android:id="@+id/twentyRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="20 Minutes" />
+
+        <RadioButton
+            android:id="@+id/fortyRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40 Minutes" />
+
+        <RadioButton
+            android:id="@+id/sixtyRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40 Minutes" />
+
+    </RadioGroup>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
