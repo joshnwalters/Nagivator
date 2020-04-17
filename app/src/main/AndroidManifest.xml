@@ -11,9 +11,12 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activity_sailing_activity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_sailing_activity"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".afterSession"
+            android:label="@string/title_activity_after_session"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".sailing_activity"
             android:label="@string/title_activity_sailing_activity"
@@ -36,5 +39,6 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
 </manifest>

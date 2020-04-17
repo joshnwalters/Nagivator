@@ -13,5 +13,11 @@
     <string name="title_activity_voyage">voyage</string>
     <string name="title_activity_sailing_activity">sailing_activity</string>
     <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="sailing">Sailing</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+
+    <string name="title_activity_fullscreen2">FullscreenActivity2</string>
+    <string name="title_activity_after_session">afterSession</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

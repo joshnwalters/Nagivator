@@ -155,7 +155,7 @@
             android:id="@+id/sixtyRadio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="40 Minutes" />
+            android:text="60 Minutes" />
 
     </RadioGroup>
 

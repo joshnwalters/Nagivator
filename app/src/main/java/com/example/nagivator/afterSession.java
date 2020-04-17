@@ -8,22 +8,23 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class voyage extends AppCompatActivity {
+public class afterSession extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_voyage);
+        setContentView(R.layout.activity_after_session);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button startSailBtn = (Button) findViewById(R.id.startSailBtn);
-        startSailBtn.setOnClickListener(new View.OnClickListener() {
+        Button submitButton = (Button) findViewById(R.id.submitButton);
+        submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick( View view) {
-                startActivity(new Intent(voyage.this, activity_sailing_activity.class));
+                startActivity(new Intent(afterSession.this, MainActivity.class));
             }
         });
+
 
 
     }
