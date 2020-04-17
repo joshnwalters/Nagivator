@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nagivator">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,10 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".NaggyActivity"></activity>
         <activity
             android:name=".activity_sailing_activity"
             android:label="@string/title_activity_sailing_activity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".afterSession"
             android:label="@string/title_activity_after_session"
@@ -39,6 +43,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.VIBRATE"/>
 
 </manifest>
